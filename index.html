@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>iOS emulator</title>
+        <meta name="description" content="iOS emulator">
+        <style type="text/css" media="screen">
+        	.main {
+        		background: url(iphone4s-white.jpg) no-repeat;
+        		width:412px;
+        		height:800px;
+        		margin: 0 auto;
+        	}	
+        </style>
+    </head>
+    <body>
+    <div class="main">
+    	<iframe id="frame" width="347" height="520" src="http://hzhou.me" frameborder="0" style="margin:0px; padding:133px 0px 0px 28px"></iframe>
+    </div>
+    <script type="text/javascript" charset="utf-8">
+    	window.onload=function(){
+    		var url = document.URL.split('?')[1];
+    		console.log(url);
+    		if(url) {
+    			document.getElementById('frame').src = url;
+    		}
+    	};
+    </script>
+    </body>
+</html>
+
